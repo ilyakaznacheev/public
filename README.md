@@ -8,6 +8,9 @@
 - Видео
     - [RU](#talks-ru)
     - [EN](#talks-en)
+- Прочее
+    - [Подкаст](#подкаст)
+    - [Мероприятия](#мероприятия)
 
 ## Articles RU
 
@@ -94,3 +97,14 @@
 
 - From ABAP to Go @ GoDays Berlin 2020.01.22
     - [video](https://youtu.be/DzByy0NMU8A)
+
+## Подкаст
+
+[Z-namespace](https://github.com/ilyakaznacheev/z-namespace) - подкаст про хорошие практики в плохих местах. Промышленное программирование и все, что с этим связано.
+
+## Мероприятия
+
+- SAP Community Day - ежегодная конференция для любителей и проффесионалов SAP
+- ABAP HARD CODE - митап для ABAP и Fiori разработчиков (и не только)
+- Golang Meetup Voronezh - митапы для любителей Go
+- Hacktoberfest Party Voronezh - веселимся на хактоберфесте
