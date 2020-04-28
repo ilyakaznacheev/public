@@ -106,5 +106,5 @@
 
 - SAP Community Day - ежегодная конференция для любителей и проффесионалов SAP
 - ABAP HARD CODE - митап для ABAP и Fiori разработчиков (и не только)
-- Golang Meetup Voronezh - митапы для любителей Go
+- Golang Meetup Voronezh - митап для любителей Go
 - Hacktoberfest Party Voronezh - веселимся на хактоберфесте
