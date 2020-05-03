@@ -6,7 +6,7 @@ But I found my way to do that without pain (okay, with less pain). And I will sh
 
 ## Separate layers
 
-The principle isn't new, but it is still useful. Nowadays in comes with different names - hexagonal architecture, onion architecture, separation of concerns, etc. The main idea is that different parts (and I mean *logically* different parts) of your application should be separated into independent parts.
+The principle isn't new, but it is still useful. Nowadays it comes with different names - hexagonal architecture, onion architecture, separation of concerns, etc. The main idea is that different parts (and I mean *logically* different parts) of your application should be separated into independent parts.
 
 It's very important because you can't just test the whole app you're building. Ok, technically you can. But it will require an enormous amount of time and it will be a nightmare from a long-term perspective.
 
@@ -14,7 +14,7 @@ Instead, make it as independent as possible. But the app or at least the microse
 
 ### Duck typing interfaces
 
-That means that if some type has the methods described in the interface, we can use it via that interface. So there is no need to do a lot of paperwork at the beginning of the project and draw a huge UMLs with all possible interactions and relationships - just write an interface for your layer with its *minimal requirements* and pass the dependences into it.
+That means that if some type has the methods described in the interface, we can use it via that interface. So there is no need to do a lot of paperwork at the beginning of the project and draw a huge UMLs with all possible interactions and relationships - just write an interface for your layer with its *minimal requirements* and pass the dependencies into it.
 
 > Example: you have a business-logic package that has to save some data into a database. No need to create or get a database connection somewhere in this package - just define a `Repository` or a `Storage` interface (or any more suitable name) and put there all actions you want to perform with the database - save, update, read, delete, increment a counter, etc. Then you just have to put the database object, that can perform that actions - it will contain the **exact** database query language code and database-specific logic. You also will handle the database connection and possible connection errors **outside of the business-logic layer**. The layer will become **independent** of the database layer.
 
@@ -74,13 +74,13 @@ So try to avoid any dependency in your logical entity. Even such a small as a cu
 
 ## 80/20
 
-100% coverage is a dream of any Open-Source developer. It's so nice to look a green badge in your project's readme! But within productive projects, things work a different way.
+100% coverage is a dream of any Open-Source developer. It's so nice to look at a green badge in your project's readme! But within productive projects, things work a different way.
 
 Normally you just don't have enough time or resources to do a 100% test coverage. End even if you'll do so, during the active development phase you will change the logic so many times, so the number of test changes will be enormous.
 
 But in fact, the 80/20 principle works here too: the 20% coverage of the "hottest" or most important code will cover 80% of the app's usage and dataflow. That means, start with the "hottest" code coverage. If you will have time and motivation you will write tests for less important parts and slowly will increase the coverage.
 
-For example, if you're building a web search service, test the search engine first. If it really works as expected, you can cover autocomplete, translation and live preview next. But without the reliable **core feature** you will fail.
+For example, if you're building a web search service, test the search engine first. If it really works as expected, you can cover autocomplete, translation, and live preview next. But without the reliable **core feature** you will fail.
 
 ## Don't write your code
 
@@ -113,10 +113,11 @@ type AccountManager struct {
 We can generate the mock simply by calling the following command:
 
 ```bash
-mockery -name=Storage -dir=internal/path/to/repo
+# if the interface is in the internal/repo package
+mockery -name=Storage  -dir=internal/repo
 ```
 
-And it will generate a perfect fitting mock for your interface! Then you only need to use it in your test:
+And it will generate a perfect fitting mock for your interface! It will be stored in the /mocks directory regarding the interface package directory (you can change it by specifying -output parameter). Then you only need to use it in your test:
 
 ```go
 var testOrder repo.Order
@@ -128,13 +129,13 @@ storageMock.On("GetOrder", "12345").
 // and then inject it into your code under the test
 am := AccountManager{storageMock}
 
-// execute test cases with the mocked dependency ...
+// execute test cases with mocked dependency ...
 ```
 
 I normally use either the go-generate to run the mock generation:
 
 ```go
-//go:generate mockery -name=Storage -dir=$PWD/internal/path/to/repo
+//go:generate mockery -name=Storage
 
 type Storage interface { ... }
 ```
@@ -145,7 +146,7 @@ And then run `go generate ./...`. Or I just put them as a list in the `Makefile`
 
 The test case writing is hard and boring work. You have to prepare a lot of data samples, do a boring work of setting the environment up, preparing infrastructure like HTTP requests and response writers, mock servers, stub data, etc. And it's really tedious to write every got and want data check and corresponding errors. 
 
-But you can save some time by using shortcuts. And with shortcuts I mean test libraries as [testify](https://github.com/stretchr/testify) to wrap repetitive parts of tests in clean and handy helpers!
+But you can save some time by using shortcuts. And with shortcuts, I mean test libraries as [testify](https://github.com/stretchr/testify) to wrap repetitive parts of tests in clean and handy helpers!
 
 Let's say you have a common HTTP response with something like this:
 
@@ -166,7 +167,7 @@ if gotStatus != tt.statusWant {
 }
 ```
 
-Simple, huh? But when you have to do that 100+ times it become a little bit boring... You don't have to wait 'till a [boreout](https://en.wikipedia.org/wiki/Boreout)! Just use shortcuts:
+Simple, huh? But when you have to do that 100+ times it becomes a little bit boring... You don't have to wait 'till a [boreout](https://en.wikipedia.org/wiki/Boreout)! Just use shortcuts:
 
 ```go
 import "github.com/stretchr/testify/assert"
@@ -182,7 +183,7 @@ assert.Equal(t, string(gotBody), tt.bodyWant, "wrong response body")
 assert.Equal(t, gotStatus, tt.statusWant,. "wrong response status")
 ```
 
-It may be used in more interesting ways. Say, you have a method which returns a pointer and an error (a common pattern in Go). So you don't want to assert a returned value in case of error, because it will cause a nill pointer dereference. So you have to build a messy condition with nill check and error check and so on... You don't have to:
+It may be used in more interesting ways. Say, you have a method that returns a pointer and an error (a common pattern in Go). So you don't want to assert a returned value in case of error because it will cause a nil pointer to dereference. So you have to build a messy condition with a nil check and error check and so on... You don't have to:
 
 ```go
 want := "we want to get this exact value"
@@ -211,7 +212,7 @@ It may look simple, but trust me, it will give you enough saved time during unit
 
 ## Make test meaningful
 
-I like tests, but when it comes to test output, it getting harder to keep on track what's going on and which test was failed and why. It's ok when you have 10 or 20 test cases, but if you have hundreds of tests (or at least test sets, if you're using table tests for example) it's really hart to understand what's wrong just looking on the test output.
+I like tests, but when it comes to testing output, it getting harder to keep on track what's going on and which test was failed and why. It's ok when you have 10 or 20 test cases, but if you have hundreds of tests (or at least test sets, if you're using table tests for example) it's really hard to understand what's wrong just looking on the test output.
 
 To make it more readable you have to give a proper description. But do you **really** want your test cases to be looking like this?
 
@@ -226,9 +227,9 @@ I hope you not. Otherwise please stop reading. Because this is my favorite part.
 To achieve readability in test output and make it easy to navigate you can use [BDD](https://en.wikipedia.org/wiki/Behavior-driven_development) approach to testing. I use it for many reasons:
 
 1. it helps to structure the test as a sequence of steps or a story;
-2. it's nice to read in test output, because it is a complete story of your test fail;
+2. it's nice to read in test output because it is a complete story of your test fail;
 3. you can build your test cases as a tree from a root common input to different results;
-4. it's possible to go outside of unit tests and write a multi-step (or not) test for a real business story. So instead of testing abstract parts of your app, you can go ahead and cover a real business-process as works in real life! It's also a good way to focus on really necessary tests first, because you can open a spec and write a test for it!
+4. it's possible to go outside of unit tests and write a multi-step (or not) test for a real business story. So instead of testing abstract parts of your app, you can go ahead and cover a real business-process as works in real life! It's also a good way to focus on really necessary tests first because you can open a spec and write a test for it!
 
 So let's take a closer look. For this kind of testing I use [ginkgo](https://github.com/onsi/ginkgo) library. It is paired with a [gomega](https://github.com/onsi/gomega) test matcher library, with a lot of test helpers and wrappers (more shortcuts!).
 
@@ -268,7 +269,7 @@ Looks more like a real spec, right?
 
 And the error output will look like this:
 
-![Ginkgo test output](/images/ginkgo_example.png)
+![Ginkgo test output](https://dev-to-uploads.s3.amazonaws.com/i/o3psl0h5yn6pudrn8z3f.png)
 
 You can also add some data into any step, and it will be added each time your test will reach this node of the test tree.
 
@@ -290,13 +291,13 @@ Describe some test entity
       └─It should error
 ```
 
-So here is a whole story, and you can describe it using ginkgo! In this case for example, the node `And with data B` will be executed 3 times:
+So here is a whole story, and you can describe it using ginkgo! In this case, for example, the node `And with data B` will be executed 3 times:
 
 - With data X -> And with data B -> And with data C -> It should to this
 - With data X -> And with data B -> And with data C -> And this
 - With data X -> And with data B -> But with data D -> It should to this
 
-You can use `BeforeEach()` to set up some context for each step (set some variables, functions, fill mocks and so on). And also you can use `AftrrEach()` to cleanup at the end of the node.
+You can use `BeforeEach()` to set up some context for each step (set some variables, functions, fill mocks, and so on). And also you can use `AftrrEach()` to cleanup at the end of the node.
 
 The library has a lot of other useful functions - `BeforeSuite` and `AfterSuite` and many variations to help you organize your test better.
 

@@ -57,7 +57,7 @@
 ## Articles EN
 
 - [Clean way to pass configs in a Go application](en/clean-way-pass-configs-go-application.md)
-    - [2020.05.12 kaznacheev.me](http://www.kaznacheev.me/article/clean-way-pass-configs-go-application/)
+    - [2019.05.12 kaznacheev.me](http://www.kaznacheev.me/article/clean-way-pass-configs-go-application/)
     - [2019.06.12 dev.to](https://dev.to/ilyakaznacheev/a-clean-way-to-pass-configs-in-a-go-application-1g64)
 - [What's wrong with godoc?](en/whats-wrong-with-godoc.md)
     - [2019.06.02 kaznacheev.me](http://www.kaznacheev.me/article/whats-wrong-with-godoc/)
@@ -67,7 +67,10 @@
     - [2019.07.25 dev.to](https://dev.to/ilyakaznacheev/setup-build-automate-deploy-a-dockerized-app-to-heroku-fast-167)
 - [Clean Configuration Management in Golang](en/clean-configuration-management-golang.md)
     - [2019.12.15 kaznacheev.me](http://www.kaznacheev.me/article/clean-configuration-management-golang/)
-    - [2019.12.15 dev.to](https://dev.to/ilyakaznacheev/clean-configuration-management-in-golang-1c89)
+    - [2020.12.15 dev.to](https://dev.to/ilyakaznacheev/clean-configuration-management-in-golang-1c89)
+- [How I write my unit tests in Go quickly](en/how-i-write-my-unit-tests-in-go-quickly.md)
+    - [2020.05.01 dev.to](https://dev.to/ilyakaznacheev/how-i-write-my-unit-tests-in-go-quickly-4bd5)
+    - [2019.05.03 kaznacheev.me](http://www.kaznacheev.me/article/how-i-write-my-unit-tests-go-quickly/)
 
 ## Talks RU
 
