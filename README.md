@@ -93,6 +93,8 @@
 - Keynote speech @ Hacktoberfest Patry Voronezh
 - Удобный Go @ Golang Meetup Voronezh 2019.12.12
 - Что OpenTelemetry нам готовит? @ Voronezh Toptal Meetup 2020.03.03
+    - [video](https://youtu.be/Tf0uMwTrEd8)
+    - [slides](https://speakerdeck.com/dreamworm/chto-opentelemetry-nam-ghotovit)
 - Воркшоп "Разработка production ready web сервиса на Go" @ Golang Voronezh & GDG Voronezh
     - [video](https://youtu.be/UTWIskmGN5o)
 
