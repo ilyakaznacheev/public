@@ -102,6 +102,8 @@
 
 - From ABAP to Go @ GoDays Berlin 2020.01.22
     - [video](https://youtu.be/DzByy0NMU8A)
+- Go-Swagger in production @ go get -u community 2020.05.21
+    - [slides](https://speakerdeck.com/dreamworm/go-swagger-in-production)
 
 ## Подкаст
 
