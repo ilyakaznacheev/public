@@ -97,6 +97,8 @@
     - [slides](https://speakerdeck.com/dreamworm/chto-opentelemetry-nam-ghotovit)
 - Воркшоп "Разработка production ready web сервиса на Go" @ Golang Voronezh & GDG Voronezh
     - [video](https://youtu.be/UTWIskmGN5o)
+- Go-Swagger в продуктиве @ Карантин, Go away!
+    - [slides](https://speakerdeck.com/dreamworm/go-swagger-v-produktivie)
 
 ## Talks EN
 
