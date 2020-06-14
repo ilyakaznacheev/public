@@ -98,6 +98,7 @@
 - Воркшоп "Разработка production ready web сервиса на Go" @ Golang Voronezh & GDG Voronezh
     - [video](https://youtu.be/UTWIskmGN5o)
 - Go-Swagger в продуктиве @ Карантин, Go away!
+    - [video](https://youtu.be/9GgCbQdW6J4)
     - [slides](https://speakerdeck.com/dreamworm/go-swagger-v-produktivie)
 
 ## Talks EN
