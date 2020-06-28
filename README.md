@@ -107,6 +107,8 @@
     - [video](https://youtu.be/DzByy0NMU8A)
 - Go-Swagger in production @ go get -u community 2020.05.21
     - [slides](https://speakerdeck.com/dreamworm/go-swagger-in-production)
+- Go-Swagger in production @ Golang Warsaw #37 2020.06.25
+    - [slides](https://speakerdeck.com/dreamworm/go-swagger-in-production-05586b24-9765-4015-b41f-08ce1d0400a0)
 
 ## Подкаст
 
