@@ -97,9 +97,12 @@
     - [slides](https://speakerdeck.com/dreamworm/chto-opentelemetry-nam-ghotovit)
 - Воркшоп "Разработка production ready web сервиса на Go" @ Golang Voronezh & GDG Voronezh
     - [video](https://youtu.be/UTWIskmGN5o)
-- Go-Swagger в продуктиве @ Карантин, Go away!
+- Go-Swagger в продуктиве @ Карантин, Go away! 2020.05.30
     - [video](https://youtu.be/9GgCbQdW6J4)
     - [slides](https://speakerdeck.com/dreamworm/go-swagger-v-produktivie)
+- Организация локальных сообществ: как, зачем и почему @ Barcamp Voronezh 2020.06.06
+    - [slides](https://speakerdeck.com/dreamworm/orghanizatsiia-lokal-nykh-soobshchiestv-kak-zachiem-i-pochiemu)
+- Godoc: хороший, плохой, злой @ GolangShow Meetup 2020.07.18
 
 ## Talks EN
 
@@ -110,6 +113,9 @@
 - Go-Swagger in production @ Golang Warsaw #37 2020.06.25
     - [video](https://youtu.be/6ml5SYTP0SA)
     - [slides](https://speakerdeck.com/dreamworm/go-swagger-in-production-05586b24-9765-4015-b41f-08ce1d0400a0)
+- Godoc: the Good, the Bad and the Ugly @ Golang Melbourne 2020.07.07
+    - [video](https://youtu.be/6ml5SYTP0SA)
+    - [slides](https://speakerdeck.com/dreamworm/godoc-the-good-the-bad-and-the-ugly)
 
 ## Подкаст
 
