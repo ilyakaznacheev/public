@@ -114,7 +114,7 @@
     - [video](https://youtu.be/6ml5SYTP0SA)
     - [slides](https://speakerdeck.com/dreamworm/go-swagger-in-production-05586b24-9765-4015-b41f-08ce1d0400a0)
 - Godoc: the Good, the Bad and the Ugly @ Golang Melbourne 2020.07.07
-    - [video](https://youtu.be/6ml5SYTP0SA)
+    - [video](https://youtu.be/RP6YE6ZlX2M)
     - [slides](https://speakerdeck.com/dreamworm/godoc-the-good-the-bad-and-the-ugly)
 
 ## Подкаст
