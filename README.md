@@ -71,6 +71,9 @@
 - [How I write my unit tests in Go quickly](en/how-i-write-my-unit-tests-in-go-quickly.md)
     - [2020.05.01 dev.to](https://dev.to/ilyakaznacheev/how-i-write-my-unit-tests-in-go-quickly-4bd5)
     - [2019.05.03 kaznacheev.me](http://www.kaznacheev.me/article/how-i-write-my-unit-tests-go-quickly/)
+- [Go-Swagger Tricks. Standard HTTP Handler](en/go-swagger-tricks-1.md)
+    - [2020.07.29 dev.to](https://dev.to/ilyakaznacheev/go-swagger-tricks-standard-http-handler-40oe)
+    - [2020.07.29 kaznacheev.me](http://www.kaznacheev.me/article/go-swagger-tricks-standard-http-handler/)
 
 ## Talks RU
 
