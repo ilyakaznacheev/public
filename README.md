@@ -106,6 +106,9 @@
 - Организация локальных сообществ: как, зачем и почему @ Barcamp Voronezh 2020.06.06
     - [slides](https://speakerdeck.com/dreamworm/orghanizatsiia-lokal-nykh-soobshchiestv-kak-zachiem-i-pochiemu)
 - Godoc: хороший, плохой, злой @ GolangShow Meetup 2020.07.18
+    - [video](https://youtu.be/wenZW9SBNKw)
+    - [slides](https://speakerdeck.com/dreamworm/godoc-khoroshii-plokhoi-zloi)
+- Design First: как спецификации API облегчают жизнь @ Deep Refactoring 2020.09.03 
 
 ## Talks EN
 
