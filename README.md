@@ -122,6 +122,7 @@
 - Godoc: the Good, the Bad and the Ugly @ Golang Melbourne 2020.07.07
     - [video](https://youtu.be/RP6YE6ZlX2M)
     - [slides](https://speakerdeck.com/dreamworm/godoc-the-good-the-bad-and-the-ugly)
+- OpenTelemetry in practice @ GoLab 2020.24.10
 
 ## Подкаст
 
