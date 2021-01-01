@@ -108,7 +108,12 @@
 - Godoc: хороший, плохой, злой @ GolangShow Meetup 2020.07.18
     - [video](https://youtu.be/wenZW9SBNKw)
     - [slides](https://speakerdeck.com/dreamworm/godoc-khoroshii-plokhoi-zloi)
-- Design First: как спецификации API облегчают жизнь @ Deep Refactoring 2020.09.03 
+- Design First: как спецификации API облегчают жизнь @ Deep Refactoring 2020.09.03
+- OpenTelemetry на практике @ GolangConf 2020.10.14
+    - [video](https://youtu.be/bGEM2Y48CuQ)
+- Golang: прошлое и будущее @ School 21 2020.11.27
+    - [video](https://youtu.be/ZBAn5ecodR4)
+    - [slides](https://speakerdeck.com/dreamworm/golang-proshloie-i-budushchieie)
 
 ## Talks EN
 
@@ -123,6 +128,7 @@
     - [video](https://youtu.be/RP6YE6ZlX2M)
     - [slides](https://speakerdeck.com/dreamworm/godoc-the-good-the-bad-and-the-ugly)
 - OpenTelemetry in practice @ GoLab 2020.24.10
+    - [video](https://youtu.be/vtuffPM5zXc)
 
 ## Подкаст
 
