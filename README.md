@@ -117,6 +117,8 @@
 - Golang: прошлое и будущее @ School 21 2020.11.27
     - [video](https://youtu.be/ZBAn5ecodR4)
     - [slides](https://speakerdeck.com/dreamworm/golang-proshloie-i-budushchieie)
+- Распределенные транзакции на основе доменных автоматов @ Lift meetup
+    - [video](https://youtu.be/ptPk3-N1xJ0)
 
 ## Talks EN
 
