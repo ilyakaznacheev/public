@@ -53,6 +53,9 @@
     - [2020.01.21 kaznacheev.me](http://www.kaznacheev.me/article/go-way-i-ego-magiya/)
 - [Удаленная работа как факт - как пережить?](ru/udalennaya-rabota-kak-fakt-kak-perezhit.md)
     - [2020.03.15 kaznacheev.me](http://www.kaznacheev.me/article/udalennaya-rabota-kak-fakt-kak-perezhit/)
+- [Автоматы на службе распределенных транзакций]()
+    - [2021.02.25 kaznacheev.me](http://www.kaznacheev.me/article/avtomaty-na-sluzhbe-raspredelennyh-tranzakcij/)
+    - [2021.02.25 habr.com](https://habr.com/ru/post/544042/)
 
 ## Articles EN
 
