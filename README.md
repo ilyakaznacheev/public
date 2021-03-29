@@ -77,6 +77,9 @@
 - [Go-Swagger Tricks. Standard HTTP Handler](en/go-swagger-tricks-1.md)
     - [2020.07.29 dev.to](https://dev.to/ilyakaznacheev/go-swagger-tricks-standard-http-handler-40oe)
     - [2020.07.29 kaznacheev.me](http://www.kaznacheev.me/article/go-swagger-tricks-standard-http-handler/)
+- [Practical Use of Finite-State Machines](en/fsm-usage.md)
+    - [2021.03.30 dev.to](https://dev.to/ilyakaznacheev/practical-use-of-finite-state-machines-3gck)
+    - [2021.03.30 kaznacheev.me](http://www.kaznacheev.me/article/practical-use-finite-state-machines/)
 
 ## Talks RU
 
