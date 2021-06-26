@@ -120,7 +120,7 @@
 - Golang: прошлое и будущее @ School 21 2020.11.27
     - [video](https://youtu.be/ZBAn5ecodR4)
     - [slides](https://speakerdeck.com/dreamworm/golang-proshloie-i-budushchieie)
-- Распределенные транзакции на основе доменных автоматов @ Lift meetup
+- Распределенные транзакции на основе доменных автоматов @ Lift meetup 13.03.2021
     - [video](https://youtu.be/ptPk3-N1xJ0)
 
 ## Talks EN
@@ -137,6 +137,8 @@
     - [slides](https://speakerdeck.com/dreamworm/godoc-the-good-the-bad-and-the-ugly)
 - OpenTelemetry in practice @ GoLab 2020.24.10
     - [video](https://youtu.be/vtuffPM5zXc)
+- DDD and FSM: tackling complexity with state machines @ Conf42 24.06.2021
+    - [video](https://youtu.be/KJV6vspieSM)
 
 ## Подкаст
 
